@@ -11,5 +11,12 @@ def read_file(filename: str) -> list[int]:
     # Open the file
     # Read the file
     return 0 
+    f=open(filename).read()
+    r=f.split(",")
+    l=[]
+    for i in r:
+        l.append(int(i))
+    return l
+print(read_file(filename="data.txt"))
 
 #Print list from file
